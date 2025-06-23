@@ -14,6 +14,9 @@ dependencies:
   '@nuxtjs/color-mode':
     specifier: 3.5.2
     version: 3.5.2
+  '@pinia/nuxt':
+    specifier: 0.11.0
+    version: 0.11.0(pinia@3.0.2)
   '@tailwindcss/vite':
     specifier: ^4.1.5
     version: 4.1.5(vite@6.3.4)
@@ -29,6 +32,9 @@ dependencies:
   nuxt:
     specifier: ^3.17.1
     version: 3.17.1(@libsql/client@0.15.4)(drizzle-orm@0.43.1)(eslint@9.26.0)(typescript@5.8.3)(vite@6.3.4)
+  pinia:
+    specifier: ^3.0.2
+    version: 3.0.2(typescript@5.8.3)(vue@3.5.13)
   tailwindcss:
     specifier: ^4.1.5
     version: 4.1.5
@@ -2288,6 +2294,17 @@ packages:
       tslib: 2.8.1
     dev: false
 
+  /@pinia/nuxt@0.11.0(pinia@3.0.2):
+    resolution: {integrity: sha512-QGFlUAkeVAhPCTXacrtNP4ti24sGEleVzmxcTALY9IkS6U5OUox7vmNL1pkqBeW39oSNq/UC5m40ofDEPHB1fg==}
+    peerDependencies:
+      pinia: ^3.0.2
+    dependencies:
+      '@nuxt/kit': 3.17.1(magicast@0.3.5)
+      pinia: 3.0.2(typescript@5.8.3)(vue@3.5.13)
+    transitivePeerDependencies:
+      - magicast
+    dev: false
+
   /@pkgjs/parseargs@0.11.0:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
@@ -3299,6 +3316,12 @@ packages:
 
   /@vue/devtools-api@6.6.4:
     resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
+    dev: false
+
+  /@vue/devtools-api@7.7.6:
+    resolution: {integrity: sha512-b2Xx0KvXZObePpXPYHvBRRJLDQn5nhKjXh7vUhMEtWxz1AYNFOVIsh5+HLP8xDGL7sy+Q7hXeUxPHB/KgbtsPw==}
+    dependencies:
+      '@vue/devtools-kit': 7.7.6
     dev: false
 
   /@vue/devtools-core@7.7.6(vite@6.3.4)(vue@3.5.13):
@@ -7456,6 +7479,20 @@ packages:
     engines: {node: '>=0.10'}
     hasBin: true
     dev: true
+
+  /pinia@3.0.2(typescript@5.8.3)(vue@3.5.13):
+    resolution: {integrity: sha512-sH2JK3wNY809JOeiiURUR0wehJ9/gd9qFN2Y828jCbxEzKEmEt0pzCXwqiSTfuRsK9vQsOflSdnbdBOGrhtn+g==}
+    peerDependencies:
+      typescript: '>=4.4.4'
+      vue: ^2.7.0 || ^3.5.11
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 7.7.6
+      typescript: 5.8.3
+      vue: 3.5.13(typescript@5.8.3)
+    dev: false
 
   /pkce-challenge@5.0.0:
     resolution: {integrity: sha512-ueGLflrrnvwB3xuo/uGob5pd5FN7l0MsLf0Z87o/UQmRtwjvfylfc9MurIxRAWywCYTgrvpXBcqjV4OfCYGCIQ==}
